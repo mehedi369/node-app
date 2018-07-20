@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+  <h3>This is all the posts from express for loop</h3>
+
+  <% for(let i=0; i<posts.length; i++){ %>
+    <ul style="disk">
+      <%= posts[i].title %> - <strong><%= posts[i].name %></strong>
+    </ul>
+  <% } %>
+  <hr/>
+
+  <h3>This is all the posts from express forEach loop</h3>
+  <% posts.forEach((post)=>{ %>
+    <ol style="disc">
+      <%= post.title %> - <%= post.name %>
+    </ol>
+  <% }); %>
+
+<% include partials/footer %>

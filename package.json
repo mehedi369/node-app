@@ -1,0 +1,15 @@
+{
+  "name": "expressinter",
+  "version": "0.1.1",
+  "description": "Practice about ejs and express with node.js.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mehedi Abdullah",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
