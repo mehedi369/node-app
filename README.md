@@ -1,17 +1,22 @@
 # node-app
 Node.js app with express.js and ejs template library.
 
-```let express = require('express');
+```
+const express = require('express');
 let app = express();
+
 // For using static file in our project.
 app.use(express.static('public'));
+
 // For setting our view engine as ejs.
 app.set("view engine","ejs");
 
+// App will render index when client hit on root/index file
 app.get('/', (req, res)=>{
   res.render("index");
 });
 
+// Client will redirected to the posts web-page 
 app.get('/posts', (req, res)=>{
   let posts = [
     {title : "This is awesome 1", name : "Rahim" },
